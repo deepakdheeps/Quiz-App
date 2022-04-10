@@ -1,0 +1,117 @@
+body {
+ 
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: darkcyan;
+  color: white;
+ 
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.green{
+border:3px solid black;
+background-color: wheat;
+margin: 50px 90px;
+border-radius: 15px;
+text-align: left;
+color: black;
+font-weight: bold;
+-webkit-box-shadow: 0 8px 6px -6px black;
+	   -moz-box-shadow: 0 8px 6px -6px black;
+	        box-shadow: 0 8px 6px -6px black;
+      -moz-box-shadow:    inset 0 0 10px #000000;
+  -webkit-box-shadow: inset 0 0 10px #000000;
+        
+}
+.green:hover{
+  margin: 30px 50px;
+  transform: rotateX(15deg);
+}
+
+
+.space,.spaces{
+ margin-left: 20px;
+ margin-bottom: 10px;
+}
+
+a
+{
+    position: relative;
+    padding: 20px 20px 20px 30px;
+    color: #fff;
+    font-size: 20px;
+    font-family: sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    transition: 0.5s;
+}
+
+a:hover
+{
+      background: #04A04F;
+    transition-delay: .5s;
+    transform: rotate(-30deg) skew(25deg);
+    box-shadow: -30px 30px 50px rgba(0,0,0,.4);
+}
+a:before,
+a:after
+{
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    background: #fff;
+    pointer-events: none;
+  transform-style: linear;
+      transition-property: width, opacity,transform,box-shadow;
+      transition-duration: 0.5s;
+  
+}
+
+a:before
+{
+  top: 0;
+  left: 0;
+}
+
+a:after
+{
+  top: 0;
+  right: 0;
+}
+
+a:hover:before
+{
+width:100%;
+opacity:0.1 ;
+transform: translate(5px,-5px);
+box-shadow: 2px 2px 2px rgba(0,0,0,.1);
+transition-delay: 0s,0.5s,1s,1.5s;
+}
+
+a:hover:after
+{
+width:100%;
+opacity:0.1 ;
+transform: translate(10px,-10px);
+box-shadow: 2px 2px 2px rgba(0,0,0,.1);
+transition-delay: 0s,0.5s,1s,1.5s;
+}
+.paras{
+  position: relative;
+  margin-left: 35px;
+  margin-bottom: 10px;
+}
+.para{
+  display: block;
+  margin-top: 25px;
+  position:absolute;
+}
